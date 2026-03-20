@@ -3,6 +3,7 @@ import { Oswald, Plus_Jakarta_Sans, Zeyada } from "next/font/google";
 
 import "@/app/globals.scss";
 import { ClientShell } from "@/components/layout/client-shell";
+import { SmoothScrollProvider } from "@/components/layout/smooth-scroll";
 
 const bodyFont = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -42,7 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${bodyFont.variable} ${displayFont.variable} ${scriptFont.variable}`}>
       <body>
-        <ClientShell>{children}</ClientShell>
+        <SmoothScrollProvider>
+          <ClientShell>{children}</ClientShell>
+        </SmoothScrollProvider>
       </body>
     </html>
   );

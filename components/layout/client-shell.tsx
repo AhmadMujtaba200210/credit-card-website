@@ -6,6 +6,7 @@ import clsx from "clsx";
 
 import { primaryNav } from "@/content/site";
 import { SiteFooter } from "@/components/layout/site-footer";
+import { useSmoothScrollControl } from "@/components/layout/smooth-scroll";
 import { SupportWidget } from "@/components/layout/support-widget";
 import { TransitionNavigationProvider } from "@/components/layout/transition-navigation";
 import { BrandMark } from "@/components/shared/brand";
@@ -20,6 +21,7 @@ type ClientShellProps = {
 export function ClientShell({ children }: ClientShellProps) {
   const pathname = usePathname();
   const router = useRouter();
+  const { setScrollLocked } = useSmoothScrollControl();
   const [menuOpen, setMenuOpen] = useState(false);
   const [transitionState, setTransitionState] = useState<"intro" | "leaving" | "idle">(
     "intro"
@@ -31,7 +33,7 @@ export function ClientShell({ children }: ClientShellProps) {
       setTransitionState("leaving");
       window.setTimeout(() => {
         router.push(href);
-      }, 180);
+      }, 260);
     },
     [router]
   );
@@ -49,9 +51,17 @@ export function ClientShell({ children }: ClientShellProps) {
   }, [pathname]);
 
   useEffect(() => {
+    setScrollLocked(menuOpen || transitionState === "leaving");
+
+    return () => {
+      setScrollLocked(false);
+    };
+  }, [menuOpen, setScrollLocked, transitionState]);
+
+  useEffect(() => {
     if (transitionState === "idle") return;
 
-    const duration = transitionState === "intro" ? 1200 : 760;
+    const duration = transitionState === "intro" ? 1280 : 920;
     const timeout = window.setTimeout(() => {
       setTransitionState("idle");
     }, duration);
@@ -101,6 +111,7 @@ export function ClientShell({ children }: ClientShellProps) {
       <aside
         id="site-navigation"
         className={clsx(styles.navOverlay, menuOpen && styles.navOverlayOpen)}
+        data-lenis-prevent
       >
         <div className={styles.navPrimary}>
           <p className={styles.overlayEyebrow}>Main Menu</p>
@@ -151,7 +162,16 @@ export function ClientShell({ children }: ClientShellProps) {
         </div>
       </aside>
 
-      <main className="shell-main">{children}</main>
+      <main
+        className={clsx(
+          "shell-main",
+          styles.shellMain,
+          menuOpen && styles.shellMainMuted,
+          transitionState === "leaving" && styles.shellMainLeaving
+        )}
+      >
+        {children}
+      </main>
       <SiteFooter />
       <SupportWidget />
     </TransitionNavigationProvider>

@@ -11,7 +11,9 @@
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.25s ease, visibility 0.25s ease;
+  transition:
+    opacity 0.42s cubic-bezier(0.22, 1, 0.36, 1),
+    visibility 0.42s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .transitionVisible {
@@ -32,11 +34,11 @@
 }
 
 .transitionIntro .transitionMark {
-  animation: introMark 1.25s ease forwards;
+  animation: introMark 1.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .transitionLeaving .transitionMark {
-  animation: leavingMark 0.7s ease forwards;
+  animation: leavingMark 0.82s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 .transitionGlyph {
@@ -58,6 +60,14 @@
   border-bottom-left-radius: 2.4rem;
   box-shadow: var(--shadow-soft);
   cursor: pointer;
+  transition:
+    transform 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.32s ease,
+    background-color 0.32s ease;
+}
+
+.menuDock:hover {
+  transform: translateY(1px);
 }
 
 .dockIcon {
@@ -104,7 +114,7 @@
   backdrop-filter: blur(8px);
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.34s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .scrimVisible {
@@ -119,7 +129,7 @@
   display: grid;
   grid-template-columns: minmax(17rem, 29vw) 1fr;
   transform: translateY(-101%);
-  transition: transform 0.35s ease;
+  transition: transform 0.56s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .navOverlayOpen {
@@ -170,7 +180,9 @@
   text-transform: uppercase;
   line-height: 0.9;
   color: rgba(255, 255, 255, 0.58);
-  transition: color 0.15s ease, transform 0.15s ease;
+  transition:
+    color 0.22s ease,
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .primaryLink:hover,
@@ -224,7 +236,30 @@
   color: rgba(255, 255, 255, 0.72);
   font-weight: 700;
   font-size: 0.88rem;
-  transition: transform 0.15s ease, color 0.15s ease;
+  transition:
+    transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+    color 0.22s ease;
+}
+
+.shellMain {
+  transition:
+    transform 0.58s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.38s ease,
+    filter 0.38s ease;
+  will-change: transform, opacity, filter;
+}
+
+.shellMainMuted {
+  opacity: 0.72;
+  filter: blur(1.5px);
+  transform: translateY(10px) scale(0.992);
+}
+
+.shellMainLeaving {
+  opacity: 0.16;
+  filter: blur(8px);
+  transform: translateY(18px) scale(0.984);
+  pointer-events: none;
 }
 
 .socialRow span:hover {

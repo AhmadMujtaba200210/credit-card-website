@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { MouseEvent, ReactNode } from "react";
 
+import { useSmoothScrollControl } from "@/components/layout/smooth-scroll";
 import { useTransitionNavigation } from "@/components/layout/transition-navigation";
 
 type TransitionLinkProps = {
@@ -25,6 +26,7 @@ export function TransitionLink({
 }: TransitionLinkProps) {
   const pathname = usePathname();
   const navigateWithTransition = useTransitionNavigation();
+  const { scrollToHash } = useSmoothScrollControl();
   const [baseHref, hash] = href.split("#");
   const normalizedBase = baseHref || pathname;
   const isInternalRoute = href.startsWith("/");
@@ -41,9 +43,18 @@ export function TransitionLink({
       event.altKey ||
       event.button !== 0 ||
       !isInternalRoute ||
-      target === "_blank" ||
-      isSamePageAnchor
+      target === "_blank"
     ) {
+      return;
+    }
+
+    if (isSamePageAnchor) {
+      event.preventDefault();
+
+      if (!scrollToHash(href) && hash) {
+        window.location.hash = hash;
+      }
+
       return;
     }
 

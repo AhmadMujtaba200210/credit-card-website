@@ -47,6 +47,24 @@ html {
     var(--font-script-next), "Zeyada", "Snell Roundhand", "Brush Script MT",
     "Segoe Script", cursive;
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: clip;
 }
 
 body {
