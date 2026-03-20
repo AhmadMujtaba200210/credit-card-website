@@ -1,12 +1,12 @@
 .footer {
-  padding: 1rem 0 2rem;
+  padding: 0.8rem 0 1.7rem;
 }
 
 .panel {
   position: relative;
   overflow: hidden;
-  padding: 2rem;
-  border-radius: 2.4rem;
+  padding: 1.75rem;
+  border-radius: 2.1rem;
   background:
     radial-gradient(circle at top right, rgba(255, 211, 64, 0.1), transparent 20%),
     linear-gradient(180deg, var(--color-near-black), var(--color-midnight));
@@ -28,8 +28,8 @@
   position: relative;
   z-index: 1;
   display: grid;
-  gap: 1.25rem;
-  max-width: 40rem;
+  gap: 1rem;
+  max-width: 36rem;
 }
 
 .ctaButton {
@@ -43,30 +43,30 @@
 
 .ctaBlock h2 {
   color: var(--color-white);
-  font-size: clamp(2.8rem, 7vw, 5.4rem);
+  font-size: clamp(2.35rem, 5.9vw, 4.25rem);
 }
 
 .scriptLine {
   margin: 0;
   color: var(--color-white);
   font-family: var(--font-script), cursive;
-  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-size: clamp(1.45rem, 3.2vw, 2rem);
 }
 
 .navGrid {
   position: relative;
   z-index: 1;
-  margin-top: 2.5rem;
-  padding-top: 2rem;
+  margin-top: 2rem;
+  padding-top: 1.65rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .navColumn {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.72rem;
 }
 
 .navColumn a {
@@ -78,44 +78,26 @@
 }
 
 .columnTitle {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   text-transform: uppercase;
-  letter-spacing: 0.18rem;
+  letter-spacing: 0.15rem;
   color: rgba(255, 255, 255, 0.45);
 }
 
 .bottomBar {
   position: relative;
   z-index: 1;
-  margin-top: 2.5rem;
-  padding-top: 1.5rem;
+  margin-top: 2rem;
+  padding-top: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 1.2rem;
   align-items: center;
 }
 
 .brandLockup {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.brandLockup p {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.brandMark {
-  width: 3rem;
-  aspect-ratio: 1;
-  border-radius: 1rem;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(180deg, var(--color-orange), var(--color-orange-deep));
-  color: var(--color-white);
-  font-family: var(--font-display), sans-serif;
-  font-size: 1.3rem;
+  min-width: 0;
 }
 
 .legal {
@@ -123,13 +105,13 @@
   justify-items: end;
   gap: 0.3rem;
   color: rgba(255, 255, 255, 0.58);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
 }
 
 @media (max-width: 991px) {
   .panel {
-    padding: 1.5rem;
-    border-radius: 1.8rem;
+    padding: 1.35rem;
+    border-radius: 1.7rem;
   }
 
   .navGrid {
@@ -143,5 +125,23 @@
 
   .legal {
     justify-items: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .ctaBlock h2 {
+    font-size: clamp(2rem, 11vw, 3.15rem);
+  }
+
+  .scriptLine {
+    font-size: 1.5rem;
+  }
+
+  .navGrid {
+    margin-top: 1.8rem;
+  }
+
+  .navColumn {
+    gap: 0.6rem;
   }
 }

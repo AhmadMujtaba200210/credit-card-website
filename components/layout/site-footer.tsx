@@ -1,4 +1,5 @@
 import { primaryNav } from "@/content/site";
+import { BrandLockup } from "@/components/shared/brand";
 import { TransitionLink } from "@/components/shared/transition-link";
 
 import styles from "./site-footer.module.scss";
@@ -42,13 +43,7 @@ export function SiteFooter() {
           </div>
 
           <div className={styles.bottomBar}>
-            <div className={styles.brandLockup}>
-              <div className={styles.brandMark}>PN</div>
-              <div>
-                <strong>PAYNEXPRO</strong>
-                <p>Modern payments, partner-first growth, and cleaner support.</p>
-              </div>
-            </div>
+            <BrandLockup className={styles.brandLockup} inverse withTagline />
 
             <div className={styles.legal}>
               <span>PAYNEXPRO © 2026. All rights reserved.</span>

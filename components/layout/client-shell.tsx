@@ -8,6 +8,7 @@ import { primaryNav } from "@/content/site";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SupportWidget } from "@/components/layout/support-widget";
 import { TransitionNavigationProvider } from "@/components/layout/transition-navigation";
+import { BrandMark } from "@/components/shared/brand";
 import { TransitionLink } from "@/components/shared/transition-link";
 
 import styles from "./client-shell.module.scss";
@@ -48,6 +49,8 @@ export function ClientShell({ children }: ClientShellProps) {
   }, [pathname]);
 
   useEffect(() => {
+    if (transitionState === "idle") return;
+
     const duration = transitionState === "intro" ? 1200 : 760;
     const timeout = window.setTimeout(() => {
       setTransitionState("idle");
@@ -68,7 +71,7 @@ export function ClientShell({ children }: ClientShellProps) {
         aria-hidden="true"
       >
         <div className={styles.transitionMark}>
-          <span>PN</span>
+          <BrandMark inverse className={styles.transitionGlyph} />
         </div>
       </div>
 

@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import clsx from "clsx";
 
 import { industryWords, merchantCards, partnerCards } from "@/content/site";
+import { BrandLockup, BrandMark } from "@/components/shared/brand";
 import { TransitionLink } from "@/components/shared/transition-link";
 
 import styles from "./intro-hero.module.scss";
@@ -25,7 +26,7 @@ const toneClassNames = {
 export function IntroHero() {
   const [audience, setAudience] = useState<Audience>("partners");
   const [wordIndex, setWordIndex] = useState(0);
-  const [displayWord, setDisplayWord] = useState("");
+  const [displayWord, setDisplayWord] = useState(industryWords[0]);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
@@ -61,9 +62,9 @@ export function IntroHero() {
       <div className="site-container">
         <div className={styles.heroSurface}>
           <div className={styles.heroCopy}>
-            <div className={styles.brandBadge}>
-              <div className={styles.badgeMark}>PN</div>
-              <p className={styles.badgeText}>
+            <div className={styles.brandRibbon}>
+              <BrandLockup withTagline />
+              <p className={styles.ribbonNote}>
                 FOR THE
                 <span className="script-accent"> next era </span>
                 OF GROWTH
@@ -90,6 +91,21 @@ export function IntroHero() {
               <TransitionLink href="/why" className="pill-button secondary">
                 Explore the model
               </TransitionLink>
+            </div>
+
+            <div className={styles.pulseStrip}>
+              <div>
+                <BrandMark className={styles.stripMark} />
+                <span>Partner-first growth</span>
+              </div>
+              <div>
+                <BrandMark className={styles.stripMark} />
+                <span>Modern merchant stack</span>
+              </div>
+              <div>
+                <BrandMark className={styles.stripMark} />
+                <span>Responsive human support</span>
+              </div>
             </div>
 
             <a href="#overview" className={styles.scrollCue}>

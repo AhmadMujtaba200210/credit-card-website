@@ -1,8 +1,12 @@
 :root {
   --font-body:
-    "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-display: "Arial Narrow", Impact, Haettenschweiler, sans-serif;
-  --font-script: "Snell Roundhand", "Brush Script MT", "Segoe Script", cursive;
+    "Plus Jakarta Sans", "Avenir Next", "Avenir", "Segoe UI", "Helvetica Neue", Arial,
+    sans-serif;
+  --font-display: "Oswald", "Arial Narrow", Impact, Haettenschweiler, sans-serif;
+  --font-script: "Zeyada", "Snell Roundhand", "Brush Script MT", "Segoe Script", cursive;
+  --display-xl: clamp(3.25rem, 8vw, 6.5rem);
+  --display-lg: clamp(2.2rem, 5vw, 4.2rem);
+  --display-md: clamp(1.8rem, 4vw, 3rem);
   --color-orange: #ff5000;
   --color-orange-deep: #f24600;
   --color-ink: #1d252c;
@@ -23,7 +27,7 @@
   --radius-xl: 2.25rem;
   --radius-lg: 1.5rem;
   --radius-pill: 999px;
-  --site-width: min(90rem, calc(100vw - 2.5rem));
+  --site-width: min(88rem, calc(100vw - 2rem));
 }
 
 *,
@@ -33,6 +37,15 @@
 }
 
 html {
+  --font-body:
+    var(--font-body-next), "Plus Jakarta Sans", "Avenir Next", "Avenir", "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
+  --font-display:
+    var(--font-display-next), "Oswald", "Arial Narrow", Impact, Haettenschweiler,
+    sans-serif;
+  --font-script:
+    var(--font-script-next), "Zeyada", "Snell Roundhand", "Brush Script MT",
+    "Segoe Script", cursive;
   scroll-behavior: smooth;
 }
 
@@ -43,8 +56,9 @@ body {
     linear-gradient(180deg, #fffdfa 0%, var(--color-paper) 100%);
   color: var(--color-ink);
   font-family: var(--font-body), sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
   min-height: 100vh;
 }
 
@@ -97,9 +111,9 @@ input,
 textarea {
   width: 100%;
   border: 1px solid rgba(54, 59, 87, 0.18);
-  border-radius: 1.25rem;
+  border-radius: 1.1rem;
   background: rgba(255, 255, 255, 0.85);
-  padding: 1rem 1.1rem;
+  padding: 0.95rem 1rem;
   color: var(--color-ink);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
@@ -113,7 +127,7 @@ textarea:focus {
 
 textarea {
   resize: vertical;
-  min-height: 9rem;
+  min-height: 8.5rem;
 }
 
 .shell-main {
@@ -122,7 +136,7 @@ textarea {
 }
 
 .site-section {
-  padding: 1.5rem 0;
+  padding: 1.3rem 0;
 }
 
 .site-container {
@@ -135,13 +149,13 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  padding: 0.65rem 1rem;
+  padding: 0.58rem 0.9rem;
   border-radius: var(--radius-pill);
   background: rgba(255, 255, 255, 0.85);
   box-shadow: var(--shadow-soft);
   text-transform: uppercase;
-  letter-spacing: 0.18rem;
-  font-size: 0.76rem;
+  letter-spacing: 0.16rem;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 
@@ -157,13 +171,15 @@ textarea {
 .display-title {
   font-family: var(--font-display), sans-serif;
   text-transform: uppercase;
-  letter-spacing: -0.04em;
-  line-height: 0.9;
+  letter-spacing: -0.05em;
+  line-height: 0.88;
+  font-weight: 600;
 }
 
 .script-accent {
   font-family: var(--font-script), cursive;
-  font-weight: 700;
+  font-weight: 400;
+  line-height: 0.9;
 }
 
 .pill-button {
@@ -171,9 +187,10 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 0.85rem;
-  padding: 0.85rem 1.4rem;
+  padding: 0.8rem 1.28rem;
   border-radius: var(--radius-pill);
   font-weight: 700;
+  font-size: 0.96rem;
   transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.15s ease;
 }
 
@@ -219,18 +236,18 @@ textarea {
 }
 
 .section-heading {
-  max-width: 48rem;
+  max-width: 44rem;
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
 }
 
 .section-heading h2 {
-  font-size: clamp(3rem, 9vw, 6rem);
+  font-size: clamp(2.35rem, 6vw, 4.75rem);
 }
 
 .section-heading p {
   color: var(--color-gray);
-  font-size: 1.1rem;
+  font-size: 1.02rem;
 }
 
 .accent-underline {
@@ -266,5 +283,18 @@ textarea {
 
   .section-heading p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .eyebrow {
+    padding: 0.52rem 0.8rem;
+    letter-spacing: 0.14rem;
+    font-size: 0.68rem;
+  }
+
+  .pill-button {
+    padding: 0.76rem 1.1rem;
+    font-size: 0.94rem;
   }
 }

@@ -1,0 +1,91 @@
+.mark {
+  display: inline-flex;
+  width: 2.5rem; // Solid default size
+  height: 2.5rem;
+  flex: 0 0 2.5rem; // Prevent shrinking or growing in flex/grid
+}
+
+.mark svg {
+  width: 100%;
+  height: 100%;
+  display: block; // Ensure it behaves as a block inside the span
+}
+
+.shell {
+  fill: rgba(255, 80, 0, 0.14);
+  stroke: rgba(255, 80, 0, 0.55);
+  stroke-width: 2.4;
+}
+
+.primary {
+  fill: var(--color-orange);
+}
+
+.secondary {
+  fill: var(--color-ink);
+}
+
+.inverse .shell {
+  fill: rgba(255, 255, 255, 0.08);
+  stroke: rgba(255, 255, 255, 0.26);
+}
+
+.inverse .primary {
+  fill: var(--color-orange);
+}
+
+.inverse .secondary {
+  fill: var(--color-white);
+}
+
+.lockup {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.82rem;
+}
+
+.lockup .mark {
+  width: 3rem;
+  height: 3rem;
+}
+
+.wording {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.wording strong {
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.58rem;
+  line-height: 0.85;
+  letter-spacing: -0.04em;
+}
+
+.wording span {
+  color: var(--color-gray);
+  font-size: 0.82rem;
+}
+
+.inverse .wording strong,
+.inverse .wording span {
+  color: var(--color-white);
+}
+
+@media (max-width: 430px) {
+  .lockup {
+    gap: 0.72rem;
+  }
+
+  .lockup .mark {
+    width: 2.65rem;
+    height: 2.65rem;
+  }
+
+  .wording strong {
+    font-size: 1.42rem;
+  }
+
+  .wording span {
+    font-size: 0.78rem;
+  }
+}

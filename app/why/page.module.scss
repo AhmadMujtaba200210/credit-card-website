@@ -1,13 +1,13 @@
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .statsGrid article,
 .principleCard {
-  padding: 1.5rem;
-  border-radius: 1.8rem;
+  padding: 1.35rem;
+  border-radius: 1.6rem;
   background: rgba(255, 255, 255, 0.78);
   box-shadow: var(--shadow-soft);
 }
@@ -15,27 +15,27 @@
 .statsGrid strong {
   color: var(--color-orange);
   font-family: var(--font-display), sans-serif;
-  font-size: 2rem;
+  font-size: 1.72rem;
 }
 
 .statsGrid h2 {
-  margin-top: 1rem;
-  font-size: 1.45rem;
+  margin-top: 0.85rem;
+  font-size: 1.28rem;
 }
 
 .statsGrid p,
 .principleCard p,
 .band p {
-  margin-top: 0.85rem;
+  margin-top: 0.7rem;
   color: var(--color-gray);
 }
 
 .storyPanel {
-  padding: 1.7rem;
-  border-radius: 2rem;
+  padding: 1.45rem;
+  border-radius: 1.75rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.85fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.78fr);
+  gap: 0.9rem;
   background:
     radial-gradient(circle at top right, rgba(255, 80, 0, 0.08), transparent 22%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.76));
@@ -44,12 +44,12 @@
 
 .storyCopy {
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
   align-content: center;
 }
 
 .storyCopy h2 {
-  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-size: clamp(2.15rem, 4.8vw, 3.9rem);
 }
 
 .storyCopy p:last-child {
@@ -58,52 +58,54 @@
 
 .storyStack {
   display: grid;
-  gap: 0.85rem;
+  gap: 0.7rem;
 }
 
 .storyStack article {
-  padding: 1.15rem 1.2rem;
-  border-radius: 1.4rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1.2rem;
   background: linear-gradient(180deg, var(--color-near-black), var(--color-midnight));
   color: var(--color-white);
 }
 
 .storyStack strong {
   font-family: var(--font-display), sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.35rem;
   color: var(--color-orange);
 }
 
 .storyStack h3 {
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
+  font-size: 1.05rem;
 }
 
 .storyStack p {
-  margin-top: 0.45rem;
+  margin-top: 0.4rem;
   color: rgba(255, 255, 255, 0.72);
+  font-size: 0.94rem;
 }
 
 .principlesWrap {
   display: grid;
-  gap: 1.25rem;
+  gap: 1.05rem;
 }
 
 .principlesGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .principleCard h3 {
-  font-size: 1.4rem;
+  font-size: 1.22rem;
 }
 
 .band {
-  padding: 1.6rem;
-  border-radius: 2rem;
+  padding: 1.45rem;
+  border-radius: 1.75rem;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.8fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr) minmax(16rem, 0.76fr);
+  gap: 0.9rem;
   background:
     radial-gradient(circle at top right, rgba(255, 211, 64, 0.12), transparent 24%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.82));
@@ -111,16 +113,16 @@
 }
 
 .band h2 {
-  margin-top: 1rem;
-  font-size: clamp(2.3rem, 5vw, 4.2rem);
+  margin-top: 0.85rem;
+  font-size: clamp(2.05rem, 4.7vw, 3.75rem);
   line-height: 0.95;
   font-family: var(--font-display), sans-serif;
   text-transform: uppercase;
 }
 
 .ctaPanel {
-  padding: 1.75rem;
-  border-radius: 2rem;
+  padding: 1.5rem;
+  border-radius: 1.85rem;
   background:
     radial-gradient(circle at top left, rgba(255, 80, 0, 0.1), transparent 20%),
     linear-gradient(180deg, var(--color-near-black), var(--color-midnight));
@@ -128,18 +130,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 0.9rem;
 }
 
 .ctaPanel h2 {
   color: var(--color-white);
-  font-size: clamp(2.4rem, 6vw, 4.6rem);
+  font-size: clamp(2.2rem, 5.1vw, 4rem);
 }
 
 .scriptLine {
   margin: 0 0 0.4rem;
   font-family: var(--font-script), cursive;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 
 @media (max-width: 991px) {
@@ -153,5 +155,22 @@
   .ctaPanel {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px) {
+  .statsGrid article,
+  .principleCard,
+  .band,
+  .storyPanel,
+  .ctaPanel {
+    padding: 1.1rem;
+    border-radius: 1.4rem;
+  }
+
+  .storyCopy h2,
+  .band h2,
+  .ctaPanel h2 {
+    font-size: clamp(1.85rem, 11vw, 3rem);
   }
 }

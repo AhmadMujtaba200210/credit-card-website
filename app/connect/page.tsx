@@ -1,4 +1,5 @@
 import { PageHero } from "@/components/shared/page-hero";
+import { BrandMark } from "@/components/shared/brand";
 import { contactChannels } from "@/content/site";
 
 import styles from "./page.module.scss";
@@ -90,7 +91,7 @@ export default function ConnectPage() {
           <div className={styles.responsePanel}>
             <div className={styles.responseVisual}>
               <div className={styles.responseOrb} />
-              <div className={styles.responseMark}>PN</div>
+              <BrandMark inverse className={styles.responseMark} />
             </div>
 
             <div className={styles.responseCopy}>
