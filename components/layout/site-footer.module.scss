@@ -1,0 +1,147 @@
+.footer {
+  padding: 1rem 0 2rem;
+}
+
+.panel {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 2.4rem;
+  background:
+    radial-gradient(circle at top right, rgba(255, 211, 64, 0.1), transparent 20%),
+    linear-gradient(180deg, var(--color-near-black), var(--color-midnight));
+  color: var(--color-white);
+}
+
+.panel::after {
+  content: "";
+  position: absolute;
+  width: 30rem;
+  height: 30rem;
+  left: -10rem;
+  bottom: -18rem;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.ctaBlock {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 1.25rem;
+  max-width: 40rem;
+}
+
+.ctaButton {
+  background: var(--color-lime);
+  box-shadow: 0 16px 30px rgba(111, 192, 102, 0.22);
+}
+
+.ctaButton:hover {
+  box-shadow: 0 20px 34px rgba(111, 192, 102, 0.28);
+}
+
+.ctaBlock h2 {
+  color: var(--color-white);
+  font-size: clamp(2.8rem, 7vw, 5.4rem);
+}
+
+.scriptLine {
+  margin: 0;
+  color: var(--color-white);
+  font-family: var(--font-script), cursive;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.navGrid {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.navColumn {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.navColumn a {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.navColumn a:hover {
+  color: var(--color-orange);
+}
+
+.columnTitle {
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.bottomBar {
+  position: relative;
+  z-index: 1;
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.brandLockup {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brandLockup p {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.brandMark {
+  width: 3rem;
+  aspect-ratio: 1;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, var(--color-orange), var(--color-orange-deep));
+  color: var(--color-white);
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.3rem;
+}
+
+.legal {
+  display: grid;
+  justify-items: end;
+  gap: 0.3rem;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 991px) {
+  .panel {
+    padding: 1.5rem;
+    border-radius: 1.8rem;
+  }
+
+  .navGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .bottomBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .legal {
+    justify-items: start;
+  }
+}

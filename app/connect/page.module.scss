@@ -1,0 +1,179 @@
+.channelGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.channelCard,
+.formPanel,
+.sideCard {
+  border-radius: 1.9rem;
+  background: rgba(255, 255, 255, 0.82);
+  box-shadow: var(--shadow-soft);
+}
+
+.channelCard {
+  padding: 1.5rem;
+}
+
+.cardIndex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  background: rgba(255, 80, 0, 0.1);
+  color: var(--color-orange);
+  font-family: var(--font-display), sans-serif;
+  font-size: 1.2rem;
+}
+
+.channelCard h2 {
+  margin-top: 1rem;
+  font-size: 1.45rem;
+}
+
+.channelCard p {
+  margin-top: 0.8rem;
+  color: var(--color-gray);
+}
+
+.contactLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.8fr);
+  gap: 1rem;
+}
+
+.formPanel {
+  padding: 1.6rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.formPanel h2 {
+  margin-top: 0.9rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 0.95;
+  font-family: var(--font-display), sans-serif;
+  text-transform: uppercase;
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.sidePanel {
+  display: grid;
+  gap: 1rem;
+}
+
+.sideCard {
+  padding: 1.35rem;
+}
+
+.sideCard h3 {
+  margin-top: 0.9rem;
+  font-size: 1.3rem;
+}
+
+.sideCard p:last-child {
+  margin-top: 0.75rem;
+  color: var(--color-gray);
+}
+
+.responsePanel {
+  padding: 1.7rem;
+  border-radius: 2rem;
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.75fr) minmax(0, 1.1fr);
+  gap: 1rem;
+  background:
+    radial-gradient(circle at top left, rgba(255, 211, 64, 0.1), transparent 20%),
+    linear-gradient(180deg, var(--color-near-black), var(--color-midnight));
+  color: var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.responseVisual {
+  position: relative;
+  min-height: 18rem;
+  display: grid;
+  place-items: center;
+}
+
+.responseOrb {
+  position: absolute;
+  width: min(18rem, 82%);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 0 0 1.4rem rgba(255, 255, 255, 0.03),
+    0 0 0 2.8rem rgba(255, 255, 255, 0.025);
+}
+
+.responseMark {
+  position: relative;
+  width: 7rem;
+  aspect-ratio: 1;
+  border-radius: 1.8rem;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(180deg, var(--color-orange), var(--color-orange-deep));
+  font-family: var(--font-display), sans-serif;
+  font-size: 2.5rem;
+}
+
+.responseCopy {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+}
+
+.responseCopy h2 {
+  color: var(--color-white);
+  font-size: clamp(2.4rem, 6vw, 4.8rem);
+}
+
+.responseCopy p:last-of-type {
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.contactMeta {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.85rem;
+}
+
+.contactMeta div {
+  padding: 1rem 1.1rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.contactMeta span {
+  display: block;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+.contactMeta strong {
+  display: block;
+  margin-top: 0.4rem;
+}
+
+@media (max-width: 991px) {
+  .channelGrid,
+  .contactLayout,
+  .fieldGrid,
+  .responsePanel,
+  .contactMeta {
+    grid-template-columns: 1fr;
+  }
+}

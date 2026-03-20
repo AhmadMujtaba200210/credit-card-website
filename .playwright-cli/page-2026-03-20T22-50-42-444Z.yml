@@ -1,0 +1,201 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - generic: PN
+  - button "Open site navigation" [ref=e2] [cursor=pointer]:
+    - generic [ref=e8]: Menu
+  - complementary [ref=e9]:
+    - generic [ref=e10]:
+      - paragraph [ref=e11]: Main Menu
+      - generic [ref=e12]:
+        - link "Intro" [ref=e13] [cursor=pointer]:
+          - /url: /
+        - link "Why PAYNEXPRO?" [ref=e14] [cursor=pointer]:
+          - /url: /why
+        - link "Connect" [ref=e15] [cursor=pointer]:
+          - /url: /connect
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - paragraph [ref=e18]: Build With Us
+        - generic [ref=e19]:
+          - link "Transparent pricing" [ref=e20] [cursor=pointer]:
+            - /url: /why#pricing
+          - link "Partner enablement" [ref=e21] [cursor=pointer]:
+            - /url: /why#support
+          - link "Merchant sales" [ref=e22] [cursor=pointer]:
+            - /url: /connect#sales
+          - link "Client support" [ref=e23] [cursor=pointer]:
+            - /url: /connect#support
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: Brand Line
+        - paragraph [ref=e26]: PAYNEXPRO builds modern payment systems for operators who want clean service, sharp economics, and a team that actually shows up.
+      - generic [ref=e27]:
+        - paragraph [ref=e28]: Stay Connected
+        - generic [ref=e29]:
+          - generic [ref=e30]: LinkedIn
+          - generic [ref=e31]: Instagram
+          - generic [ref=e32]: YouTube
+  - main [ref=e33]:
+    - generic [ref=e36]:
+      - generic [ref=e37]:
+        - generic [ref=e38]:
+          - generic [ref=e39]: PN
+          - paragraph [ref=e40]: FOR THE next era OF GROWTH
+        - heading "Payment solutions for |" [level=1] [ref=e41]:
+          - text: Payment solutions for
+          - generic [ref=e42]: "|"
+        - paragraph [ref=e43]: Empowering growth-minded partners and ambitious businesses with next-gen payments, sharper support, and a cleaner operating stack.
+        - generic [ref=e44]:
+          - link "Start the conversation" [ref=e45] [cursor=pointer]:
+            - /url: /connect
+          - link "Explore the model" [ref=e46] [cursor=pointer]:
+            - /url: /why
+        - link "Scroll" [ref=e47] [cursor=pointer]:
+          - /url: "#overview"
+          - generic [ref=e48]: Scroll
+          - img [ref=e49]
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - button "Partner with us" [ref=e53] [cursor=pointer]
+          - button "Own a business?" [ref=e54] [cursor=pointer]
+        - generic [ref=e55]:
+          - link "New NEXEDGE Grow your residual portfolio with a modern zero-fee strategy." [ref=e56] [cursor=pointer]:
+            - /url: /why#programs
+            - generic [ref=e57]: New
+            - generic [ref=e58]:
+              - heading "NEXEDGE" [level=3] [ref=e59]
+              - paragraph [ref=e60]: Grow your residual portfolio with a modern zero-fee strategy.
+          - link "Why PAYNEXPRO? See how our partner-first model is built to scale with you." [ref=e61] [cursor=pointer]:
+            - /url: /why
+            - generic [ref=e62]:
+              - heading "Why PAYNEXPRO?" [level=3] [ref=e63]
+              - paragraph [ref=e64]: See how our partner-first model is built to scale with you.
+          - link "Connect Meet the team, get support, and open the right conversation fast." [ref=e65] [cursor=pointer]:
+            - /url: /connect
+            - generic [ref=e66]:
+              - heading "Connect" [level=3] [ref=e67]
+              - paragraph [ref=e68]: Meet the team, get support, and open the right conversation fast.
+          - link "Smart POS Flexible hardware and ordering systems for modern operators." [ref=e69] [cursor=pointer]:
+            - /url: /#platform
+            - generic [ref=e70]:
+              - heading "Smart POS" [level=3] [ref=e71]
+              - paragraph [ref=e72]: Flexible hardware and ordering systems for modern operators.
+          - link "Partner Hub Sales tools, onboarding kits, launch collateral, and support flows." [ref=e73] [cursor=pointer]:
+            - /url: /why#support
+            - generic [ref=e74]:
+              - heading "Partner Hub" [level=3] [ref=e75]
+              - paragraph [ref=e76]: Sales tools, onboarding kits, launch collateral, and support flows.
+          - link "Equipment Countertop, mobile, and unattended devices that fit your mix." [ref=e77] [cursor=pointer]:
+            - /url: /#equipment
+            - generic [ref=e78]:
+              - heading "Equipment" [level=3] [ref=e79]
+              - paragraph [ref=e80]: Countertop, mobile, and unattended devices that fit your mix.
+          - link "Software Reporting, invoicing, and recurring payments beyond the terminal." [ref=e81] [cursor=pointer]:
+            - /url: /#software
+            - generic [ref=e82]:
+              - heading "Software" [level=3] [ref=e83]
+              - paragraph [ref=e84]: Reporting, invoicing, and recurring payments beyond the terminal.
+    - generic [ref=e87]:
+      - article [ref=e88]:
+        - generic [ref=e90]: NX
+        - generic [ref=e92]:
+          - paragraph [ref=e93]: Growth Program
+          - heading "NEXEDGE helps ambitious partners build faster, cleaner portfolios." [level=2] [ref=e94]
+          - paragraph [ref=e95]: For teams that want more control over pricing strategy, equipment, and merchant rollout, our flagship growth framework combines margin flexibility with a modern operating stack.
+          - link "Explore the model" [ref=e96] [cursor=pointer]:
+            - /url: /why#programs
+            - text: Explore the model
+            - img [ref=e97]
+      - article [ref=e99]:
+        - generic [ref=e100]:
+          - paragraph [ref=e101]: Partner Promise
+          - heading "We stay aligned with the people growing the business." [level=2] [ref=e102]
+          - paragraph [ref=e103]: PAYNEXPRO is built around partner enablement, not channel conflict. That means cleaner communication, predictable support, and a team that helps your portfolio expand instead of competing against it.
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - strong [ref=e106]: 3x
+            - generic [ref=e107]: faster launch playbooks
+          - generic [ref=e108]:
+            - strong [ref=e109]: 24/7
+            - generic [ref=e110]: support routing coverage
+          - generic [ref=e111]:
+            - strong [ref=e112]: "1"
+            - generic [ref=e113]: shared system for ops, billing, and reporting
+      - generic [ref=e114]:
+        - article [ref=e115]:
+          - paragraph [ref=e116]: Smart POS
+          - heading "Platform-ready checkout for fast-moving operators." [level=3] [ref=e117]
+          - paragraph [ref=e118]: Handhelds, countertop devices, tableside flow, and cleaner reporting for operators who need speed without giving up control.
+        - article [ref=e119]:
+          - paragraph [ref=e120]: Equipment
+          - heading "Purpose-fit hardware footprints for every environment." [level=3] [ref=e121]
+          - paragraph [ref=e122]: Mobile, countertop, or unattended device mixes configured around the way your business actually runs.
+        - article [ref=e123]:
+          - paragraph [ref=e124]: Software
+          - 'heading "More than transactions: invoicing, billing, and visibility." [level=3] [ref=e125]'
+          - paragraph [ref=e126]: Use one cleaner layer for links, recurring billing, reporting, and operational visibility across locations.
+    - generic [ref=e129]:
+      - generic [ref=e130]:
+        - heading "We stay in your corner, every step of the way." [level=2] [ref=e131]:
+          - text: We stay in your corner,
+          - generic [ref=e132]: every step
+          - text: of the way.
+        - paragraph [ref=e133]: "The tone is simple: responsive people, clear communication, and execution that feels deliberate instead of improvised."
+      - generic [ref=e134]:
+        - generic [ref=e135]: ★★★★★
+        - blockquote [ref=e136]: PAYNEXPRO feels like a partner, not a processor. The rollout was clean, the support team stayed close, and our merchants noticed the difference immediately.
+        - generic [ref=e137]:
+          - strong [ref=e138]: Alicia Warren
+          - generic [ref=e139]: North Harbor Payments
+        - generic [ref=e140]:
+          - button "Previous testimonial" [ref=e141] [cursor=pointer]: ←
+          - button "Next testimonial" [ref=e142] [cursor=pointer]: →
+  - contentinfo [ref=e143]:
+    - generic [ref=e145]:
+      - generic [ref=e146]:
+        - paragraph [ref=e147]: Ready for something sharper?
+        - heading "Build the payment experience your brand deserves." [level=2] [ref=e148]
+        - link "Start a conversation" [ref=e149] [cursor=pointer]:
+          - /url: /connect
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - generic [ref=e152]: Main
+          - link "Intro" [ref=e153] [cursor=pointer]:
+            - /url: /
+          - link "Why PAYNEXPRO?" [ref=e154] [cursor=pointer]:
+            - /url: /why
+          - link "Connect" [ref=e155] [cursor=pointer]:
+            - /url: /connect
+        - generic [ref=e156]:
+          - generic [ref=e157]: Solutions
+          - link "Pricing strategy" [ref=e158] [cursor=pointer]:
+            - /url: /why#pricing
+          - link "Smart POS" [ref=e159] [cursor=pointer]:
+            - /url: /#platform
+          - link "Software stack" [ref=e160] [cursor=pointer]:
+            - /url: /#software
+        - generic [ref=e161]:
+          - generic [ref=e162]: Support
+          - link "Client support" [ref=e163] [cursor=pointer]:
+            - /url: /connect#support
+          - link "Partner onboarding" [ref=e164] [cursor=pointer]:
+            - /url: /connect#partners
+          - link "Sales conversations" [ref=e165] [cursor=pointer]:
+            - /url: /connect#sales
+      - generic [ref=e166]:
+        - generic [ref=e167]:
+          - generic [ref=e168]: PN
+          - generic [ref=e169]:
+            - strong [ref=e170]: PAYNEXPRO
+            - paragraph [ref=e171]: Modern payments, partner-first growth, and cleaner support.
+        - generic [ref=e172]:
+          - generic [ref=e173]: PAYNEXPRO © 2026. All rights reserved.
+          - generic [ref=e174]: Built for a three-page launch with room to expand.
+  - generic [ref=e175]:
+    - generic [ref=e176]:
+      - generic [ref=e177]: PN
+      - paragraph [ref=e178]: How can we help? We are here for merchants, partners, and operators.
+      - button "Dismiss support prompt" [ref=e179] [cursor=pointer]: ×
+    - button "PN Connect" [ref=e180] [cursor=pointer]:
+      - generic [ref=e181]: PN
+      - generic [ref=e182]: Connect

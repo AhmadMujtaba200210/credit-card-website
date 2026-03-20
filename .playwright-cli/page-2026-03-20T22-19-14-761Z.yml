@@ -1,0 +1,256 @@
+- generic [active] [ref=e1]:
+  - img [ref=e7]
+  - banner [ref=e8]:
+    - button "menu" [ref=e9] [cursor=pointer]:
+      - link "Menu" [ref=e13]:
+        - /url: "#"
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - link "FOR OVER 20 YEARS!" [ref=e18] [cursor=pointer]:
+        - /url: /?r=0
+        - img [ref=e20]:
+          - generic "PPT" [ref=e22]
+        - heading "FOR OVER 20 YEARS!" [level=4] [ref=e51]:
+          - text: FOR OVER
+          - strong [ref=e53]: "20"
+          - text: YEARS!
+      - heading "Payment solutions for restaurant|" [level=1] [ref=e54]:
+        - text: Payment solutions
+        - text: for
+        - generic [ref=e55]: restaurant|
+      - paragraph [ref=e56]:
+        - text: Empowering our national network of sales partners with cutting-
+        - emphasis [ref=e58]: edge
+        - text: payment solutions designed for businesses spanning various industries.
+      - img [ref=e61]
+    - generic [ref=e63]:
+      - tablist [ref=e64]:
+        - tab "Partner with us" [selected] [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Partner with us
+        - tab "Own a business?" [ref=e67] [cursor=pointer]:
+          - generic [ref=e68]: Own a business?
+      - tabpanel "Partner with us" [ref=e70]:
+        - generic [ref=e71]:
+          - link "White EDGE logo Build your merchant portfolio faster than ever!" [ref=e72] [cursor=pointer]:
+            - /url: /edge
+            - img "White EDGE logo" [ref=e73]
+            - paragraph [ref=e74]: Build your merchant portfolio faster than ever!
+          - link "Why PPT? Learn how the PEAK bonus can help to grow your portfolio" [ref=e75] [cursor=pointer]:
+            - /url: /why
+            - heading "Why PPT?" [level=3] [ref=e76]
+            - paragraph [ref=e77]: Learn how the PEAK bonus can help to grow your portfolio
+          - link "Connect Get some support or meet with us." [ref=e78] [cursor=pointer]:
+            - /url: /connect
+            - heading "Connect" [level=3] [ref=e79]
+            - paragraph [ref=e80]: Get some support or meet with us.
+          - link "Point of Sale Everything you need to grow your business." [ref=e81] [cursor=pointer]:
+            - /url: /pos
+            - heading "Point of Sale" [level=3] [ref=e82]
+            - paragraph [ref=e83]: Everything you need to grow your business.
+          - link "myPPT white Merchant applications, marketing, etc." [ref=e84] [cursor=pointer]:
+            - /url: http://www.mypayprotec.com
+            - img "myPPT white" [ref=e85]
+            - paragraph [ref=e86]: Merchant applications, marketing, etc.
+          - link "Equipment Finding the right device for your business" [ref=e87] [cursor=pointer]:
+            - /url: /equipment
+            - heading "Equipment" [level=4] [ref=e88]
+            - paragraph [ref=e89]: Finding the right device for your business
+          - link "Software For more than just taking payments" [ref=e90] [cursor=pointer]:
+            - /url: /software
+            - heading "Software" [level=4] [ref=e91]
+            - paragraph [ref=e92]: For more than just taking payments
+  - generic [ref=e94]:
+    - img "EDGE illustration" [ref=e96]
+    - generic [ref=e101]:
+      - img "EDGE logo" [ref=e102]
+      - heading "Eliminate up to 99% of your merchant's payment processing fees." [level=3] [ref=e103]
+      - heading "A no-brainer if you're looking to grow your portfolio" [level=3] [ref=e104]: A no-brainer if you're looking to grow your portfolio
+      - paragraph [ref=e105]:
+        - text: EDGE offers a specialized option for merchants who want to reduce credit card processing fees.
+        - text: By collecting a small additional amount on each credit card transaction, EDGE can help offset most of the processing fees for merchants.
+        - text: With EDGE, you'll also have access to advanced technology and tools that make it easy to implement this option in your business.
+      - link "EARN UP TO 5x MORE!" [ref=e106] [cursor=pointer]:
+        - /url: /edge
+        - generic [ref=e107]: EARN UP TO 5x MORE!
+        - img [ref=e109]
+  - generic [ref=e112]:
+    - img "Non-compete Illustration" [ref=e114]
+    - generic [ref=e119]:
+      - heading "We don't compete with our partners" [level=3] [ref=e120]
+      - paragraph [ref=e121]:
+        - text: At PayProTec, we embrace a partner-centric philosophy that truly distinguishes us. We take pride in our network of partners, all of whom are 1099 employees, ensuring that we never compete with these valued partners using "in-house sales."
+        - text: This unwavering commitment to collaboration empowers our partners to thrive, expand their portfolios, and attain remarkable success.
+  - heading "We're in your corner, every step of the way" [level=1] [ref=e125]
+  - generic [ref=e128]:
+    - region "carousel" [ref=e129]:
+      - generic [ref=e130]:
+        - group "1 of 11" [ref=e132]:
+          - generic [ref=e134]:
+            - generic [ref=e135]: 
+            - generic [ref=e136]:
+              - paragraph [ref=e137]: The payment processing world can be a difficult space to navigate coming in as a new agent/independent contractor.
+              - paragraph [ref=e138]: ‍
+              - paragraph [ref=e139]: Unless you’re fortunate enough to partner with a company like PayProTec. And if you’re lucky, you might get Mike Stetzel as your partner relations manager. ;)
+              - paragraph [ref=e140]: ‍
+              - paragraph [ref=e141]: Big round of applause for this organization and it’s people!
+            - paragraph [ref=e142]: Alan De'Osuna
+            - paragraph [ref=e143]: Proud Star Financial
+        - group [ref=e144]:
+          - generic [ref=e146]:
+            - generic [ref=e147]: 
+            - paragraph [ref=e149]: Brian Linky is one of the most professional ISO/Agent manager I have seen. The team has been working with Brian for several months and he provided all the resources our team needed to grow!
+            - paragraph [ref=e150]: Khalil Nayl
+            - paragraph [ref=e151]: Lynx Processing LLC
+        - group [ref=e152]:
+          - generic [ref=e154]:
+            - generic [ref=e155]: 
+            - paragraph [ref=e157]: Excellent Partnership. Very supportive and accommodating for all questions related to customer care and issues regarding products
+            - paragraph [ref=e158]: Matt Powers
+        - group [ref=e159]:
+          - generic [ref=e161]:
+            - generic [ref=e162]: 
+            - paragraph [ref=e164]: My team has worked with Jasilee at PPT for over a year and a half and has had a very positive and amazing experience. I highly recommend them to anyone looking for great partners.
+            - paragraph [ref=e165]: Nicholas Korthals
+            - paragraph [ref=e166]: Kore Payment
+        - group [ref=e167]:
+          - generic [ref=e169]:
+            - generic [ref=e170]: 
+            - paragraph [ref=e172]: I have been a PPT partner for 2 years. Have received great customer service. Mike Stetzel has provided exceptional training and resources. Team is positive and helpful.
+            - paragraph [ref=e173]: Rich Ayala
+            - paragraph [ref=e174]: RC Ayala Marketing Group
+        - group [ref=e175]:
+          - generic [ref=e177]:
+            - generic [ref=e178]: 
+            - paragraph [ref=e180]: Cam Hoskins was instrumental in assisting me with the Valor VL 500 machines and upgrading the software and formats, even whilst on vacation! Great job!👏
+            - paragraph [ref=e181]: Steve Dudum
+        - group [ref=e182]:
+          - generic [ref=e184]:
+            - generic [ref=e185]: 
+            - paragraph [ref=e187]: "Payprotec is a triple threat! They’re 5 stars in 3 key areas:Customer support: efficiency & speedTechnology: utility and reliability in mindPricing: fairness to pay and keep good employees while passing on cost savings to clients."
+            - paragraph [ref=e188]: Steven Golden
+        - group [ref=e189]:
+          - generic [ref=e191]:
+            - generic [ref=e192]: 
+            - paragraph [ref=e194]: PayProTec has an amazing group of people that are extremely professional and easy to work with. They provide you with all the tools to succeed and help is always just a phone call away. I would highly recommend this organization!
+            - paragraph [ref=e195]: Techfense Solutions
+        - group [ref=e196]:
+          - generic [ref=e198]:
+            - generic [ref=e199]: 
+            - paragraph [ref=e201]: Payprotec has been the best CC Processor that I’ve ever had the pleasure to work with!!! They get things done…and on time…I would not work with any other processor!!!😎😎😎
+            - paragraph [ref=e202]: Tim Burchell
+        - group [ref=e203]:
+          - generic [ref=e205]:
+            - generic [ref=e206]: 
+            - paragraph [ref=e208]: If I could give Jenny a 5-star rating, I would give her a 10!
+            - paragraph [ref=e209]: Victor
+            - paragraph [ref=e210]: Consisten Cash
+        - group [ref=e211]:
+          - generic [ref=e213]:
+            - generic [ref=e214]: 
+            - paragraph [ref=e216]: As a sales professional working with PayProTec, I can confidently say that the support and resources provided by the company are second to none.The onboarding process was thorough and informative, equipping me with the knowledge and tools needed to succeed in the market.
+            - paragraph [ref=e217]: Will Bower
+            - paragraph [ref=e218]: WillPay
+      - text: 
+      - button "next slide" [ref=e219] [cursor=pointer]:
+        - generic [ref=e220]: 
+    - link "View more reviews" [ref=e222] [cursor=pointer]:
+      - /url: https://www.google.com/search?q=PayProTec&stick=H4sIAAAAAAAA_-NgU1I1qLCwMDSzTEkxSDExsTQ3SkuxMqgwTEozsTQ2NTVJTUo0sLRMXsTKGZBYGVCUH5KaDABd2NsuNQAAAA&hl=en-US&mat=CR9cG6La5rMIElYBqiIDwlbuDEIST29oojVbS8S_OQpKdvem_2MReQMPvCREQPm1z4mYpLSS6f1p4pTN2kIPFT4waj-yGUzc1fljvG2KxMOTBhKhr3lfH7V0T60O_huuOw&authuser=0&ved=2ahUKEwi4jfW0l9qJAxVUkIkEHWFdL_8Q-MgIegQINBAe#lrd=0x88169dd0d44972fd:0x1bf493554eba099c,1,,,,&mpd=~627098599831591967/customers/reviews
+      - generic [ref=e223]: View more reviews
+      - img [ref=e225]
+  - contentinfo [ref=e228]:
+    - generic [ref=e230]:
+      - generic [ref=e231]:
+        - heading "Ready for something better?" [level=2] [ref=e232]
+        - link "Become a Partner" [ref=e233] [cursor=pointer]:
+          - /url: https://connect.payprotec.com/partners-1
+          - generic [ref=e234]: Become a Partner
+          - img [ref=e235]
+      - generic [ref=e237]:
+        - generic [ref=e239]:
+          - link "Facebook Icon" [ref=e240] [cursor=pointer]:
+            - /url: http://www.fb.com/payprotec
+            - img "Facebook Icon" [ref=e241]
+          - link "Instagram Logo" [ref=e242] [cursor=pointer]:
+            - /url: http://www.instagram.com/payprotec
+            - img "Instagram Logo" [ref=e243]
+          - link "Twitter Logo" [ref=e244] [cursor=pointer]:
+            - /url: http://www.twitter.com/payprotec
+            - img "Twitter Logo" [ref=e245]
+          - link "Twitter Icon" [ref=e246] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCxYZbNkcE5eschikbxxlOuw
+            - img "Twitter Icon" [ref=e247]
+          - link "Twitter Icon" [ref=e248] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/payprotec---warsaw
+            - img "Twitter Icon" [ref=e249]
+        - generic [ref=e250]:
+          - text: PayProTec is a registered DBA of EPX, a registered ISO of BMOHarris Bank N.A., Chicago, IL, Fresno First Bank, Fresno,CA, and Citizens Bank N.A., Providence, RI
+          - text: ‍
+          - text: "*Follow your state laws concerning pricing communication and commerce."
+        - list [ref=e252]:
+          - listitem [ref=e253]:
+            - link [ref=e254] [cursor=pointer]:
+              - /url: /?r=0
+          - listitem [ref=e255]:
+            - link [ref=e256] [cursor=pointer]:
+              - /url: /es
+      - generic [ref=e257]:
+        - generic [ref=e258]:
+          - link "Intro" [ref=e259] [cursor=pointer]:
+            - /url: /?r=0
+          - link "EDGE" [ref=e260] [cursor=pointer]:
+            - /url: /edge
+          - link "Point of Sale" [ref=e261] [cursor=pointer]:
+            - /url: /pos
+          - link "Why PayProTec?" [ref=e262] [cursor=pointer]:
+            - /url: /why
+          - link "Connect" [ref=e263] [cursor=pointer]:
+            - /url: /connect
+        - generic [ref=e264]:
+          - generic [ref=e265]: Merchant Types
+          - link "Restaurant" [ref=e266] [cursor=pointer]:
+            - /url: /restaurant
+          - link "Retail" [ref=e267] [cursor=pointer]:
+            - /url: /retail
+          - link "E-commerce" [ref=e268] [cursor=pointer]:
+            - /url: /ecommerce
+        - generic [ref=e269]:
+          - generic [ref=e270]: Products & Services
+          - link "Payments Hub" [ref=e271] [cursor=pointer]:
+            - /url: http://www.paymentshub.com
+          - link "Equipment" [ref=e272] [cursor=pointer]:
+            - /url: /equipment
+          - link "Software" [ref=e273] [cursor=pointer]:
+            - /url: /software
+        - generic [ref=e274]:
+          - generic [ref=e275]: Partner Resources
+          - link "Partner Program" [ref=e276] [cursor=pointer]:
+            - /url: https://www.mypayprotec.com/partners/get-started
+          - link "myPayProTec" [ref=e277] [cursor=pointer]:
+            - /url: http://www.mypayprotec.com
+          - link "Partner Portal" [ref=e278] [cursor=pointer]:
+            - /url: http://partner.paymentshub.com
+          - link "POSLead.com" [ref=e279] [cursor=pointer]:
+            - /url: /poslead
+          - link "Brand Yourself" [ref=e280] [cursor=pointer]:
+            - /url: /brand-yourself
+          - link "Join.PayProTec" [ref=e281] [cursor=pointer]:
+            - /url: /join
+      - generic [ref=e282]:
+        - generic [ref=e283]:
+          - img "PPT Mark" [ref=e284]
+          - generic [ref=e285]: PayProTec © 2026. All Rights Reserved.
+          - link "Privacy Policy" [ref=e286] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms of Use" [ref=e287] [cursor=pointer]:
+            - /url: /terms
+        - generic [ref=e288]:
+          - img "Indiana" [ref=e289]
+          - generic [ref=e290]: Proudly Made in Indiana
+  - generic [ref=e291]:
+    - generic [ref=e293] [cursor=pointer]:
+      - img "PayProBot" [ref=e294]
+      - generic [ref=e295]: How can we help? We're here for you!
+      - button "Close prompt" [ref=e296]:
+        - img [ref=e297]
+    - button "Select to open the chat widget" [ref=e299] [cursor=pointer]:
+      - img [ref=e301]
